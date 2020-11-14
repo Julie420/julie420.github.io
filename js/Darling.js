@@ -24,5 +24,5 @@ document.addEventListener("keydown", function (e) {
 });
 
 function kubaCodePassed() {
-  popup("cutie!! ily <3")
+  popup("kys retard")
 }
