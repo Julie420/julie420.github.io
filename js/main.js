@@ -31,12 +31,6 @@ function clickFunc() {
   text.setAttribute("style", "cursor: default;");
 }
 
-sotpsteelinmycoad.ended = () => text.innerText = "Enoying the song?";
-
-particlesJS.load('particles-js', '/resources/particlesjs-config.json', () => {
-  console.log('particles.js loaded');
-});
-
 function removeElement(id) {
     var elem = document.getElementById(id);
     return elem.parentNode.removeChild(elem);
