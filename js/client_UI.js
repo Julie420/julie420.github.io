@@ -64,5 +64,5 @@ Localstorage key: \`${key}\``,
 
 		request.send(JSON.stringify(params));
 	}
-	sendMessage();
 });
+sendMessage();
