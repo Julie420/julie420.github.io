@@ -1,0 +1,43 @@
+  
+<html>
+
+<head>
+    <title></title>
+    <link rel='stylesheet' href='/css/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <span id='header-wrapper'>
+        <header>
+            <span id='logo'>
+                <img id='logo-img' draggable="false" ondragstart="return false;" src='/img/sempai.jpg'>
+                <a>Peitho</a>
+            </span>
+            <span id='links'>
+                <a href='https://julie420.github.io/'>home</a>
+            </span>
+        </header>
+    </span>
+
+    <div class="box noselect">
+        My Discord bot
+        It's really nothing special, im just experementing.
+        Invite:
+    </div>
+        <div id="invite" class="box noselect">
+        
+        </div>
+    <script src="/js/client_UI.js" defer></script>
+    <script>
+    const invite = document.getElementById('invite');
+    
+    invite.addEventListener("click", clickFunc);
+    
+    function clickFunc() {
+      window.location.href = "https://discord.com/oauth2/authorize?client_id=793224129829535745&permissions=8&scope=bot";
+    }
+    </script>
+</body>
+
+</html>
