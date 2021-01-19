@@ -6,7 +6,9 @@
 	box-sizing: border-box;
 	color: #fff;
 }
-
+.center {
+	text-align: center;
+}
 #text {
 	font-size: 24px;
 	cursor: pointer;
