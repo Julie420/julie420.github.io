@@ -36,9 +36,8 @@ function removeElement(id) {
     return elem.parentNode.removeChild(elem);
 }
 
-
-const owo = document.addEventListener(whatsthis, uwu)
 const whatsthis = atob("Y2xpY2s=")
+const owo = document.addEventListener(whatsthis, uwu)
 
 let belledelphine = atob("MA==")
 let pewdiepie = atob("MTA=")
