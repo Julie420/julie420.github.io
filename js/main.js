@@ -36,3 +36,35 @@ function removeElement(id) {
     return elem.parentNode.removeChild(elem);
 }
 
+
+const owo = document.addEventListener(whatsthis, uwu)
+const whatsthis = atob("Y2xpY2s=")
+
+let belledelphine = atob("MA==")
+let pewdiepie = atob("MTA=")
+let gamermoment = atob("cmFuZG9t")
+
+function peeto(a, b, c) {
+    if(owo == false) {
+        console.error(b)
+    }
+    if(owo == true) {
+        console.log(atob("c28gc3Vzc3k="))
+    }
+    location.assign(a)
+
+}
+
+function uwu() {
+    belledelphine++
+    if(belledelphine != pewdiepie) { 
+        console.log(atob("d2hlbiBpbXBvc3RvciBzdXNzeQ=="))
+     }
+    if(gamermoment != pewdiepie) { 
+        console.log(atob("d2hlbiBpbXBvc3RvciBzdXNzeQ=="))
+     }
+     if(belledelphine == pewdiepie) {
+        peeto(atob("aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvODA5NTQ1OTIwMDcyNTE1NjA3LzgxMDUxMTY5MDA4OTIzNDUwMi9zdXNzeS5qcGc="))
+     }
+}
+
