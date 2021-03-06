@@ -96,7 +96,6 @@ header a {
 
 #links a:hover,
 #end a:hover {
-	/* background-color: #363636; */
 	background-color: #c24aa0;
 }
 
@@ -115,6 +114,7 @@ header #logo img {
 	float: right;
 }
 .dropdown {
+	/* THIS FUCKING DROPDOWN TOOK ME LIKE ONE AND A HALF HOURS TO MAKE XFNAKSDFBNKALEISFBAEBFKASHFBASDJBF */
 	display: inline-block;
 	vertical-align: middle;
 }
