@@ -78,7 +78,6 @@ header {
 	background-color: #272727;
 	padding: 0px 14px;
 	user-select: none;
-	font-size: 0px;
 }
 
 header a {
@@ -114,4 +113,27 @@ header #logo img {
 #end {
 	padding-top: 9px;
 	float: right;
+}
+.dropdown {
+	display: inline-block;
+	vertical-align: middle;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #313131;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 6px 8px;
+	z-index: 1;
+	vertical-align: middle;
+	border-radius: 6px;
+	font-size: 16px;
+	transition: background-color 0.2s;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+#dropdown-hover {
+	cursor: pointer;
 }
