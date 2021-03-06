@@ -130,6 +130,7 @@ header #logo img {
 	border-radius: 6px;
 	font-size: 16px;
 	transition: background-color 0.2s;
+	text-decoration: none; 
 }
 .dropdown:hover .dropdown-content {
 	display: block;
